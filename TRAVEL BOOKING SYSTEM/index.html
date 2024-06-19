@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Travel Booking System</h1>
+    <nav>
+      <ul>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#search-flights">Search Flights</a></li>
+        <li><a href="#destinations">Popular Destinations</a></li>
+      </ul>
+    </nav>
+    <section id="register">
+      <h2>Register</h2>
+      <form id="register-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    <section id="search-flights">
+      <h2>Search Flights</h2>
+      <form id="search-form">
+        <input type="text" id="origin" placeholder="Origin" required>
+        <input type="text" id="destination" placeholder="Destination" required>
+        <button type="submit">Search</button>
+      </form>
+      <ul id="flights-list"></ul>
+    </section>
+    <section id="destinations">
+      <h2>Popular Destinations</h2>
+      <div id="destinations-list">
+        <div class="destination">
+          <h3>Paris, France</h3>
+          <p>Experience the city of lights and its rich culture.</p>
+        </div>
+        <div class="destination">
+          <h3>Tokyo, Japan</h3>
+          <p>Discover the vibrant life and historical landmarks of Tokyo.</p>
+        </div>
+        <div class="destination">
+          <h3>New York, USA</h3>
+          <p>Visit the city that never sleeps with its iconic skyline.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
